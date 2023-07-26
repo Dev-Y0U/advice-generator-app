@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
 :root{
 /* Primary color*/
 --Light_Cyan: hsl(193, 38%, 86%);
@@ -6,14 +7,60 @@
 --Grayish_Blue: hsl(217, 19%, 38%);
 --Dark_Grayish_Blue: hsl(217, 19%, 24%);
 --Dark_Blue: hsl(218, 23%, 16%);
-
 }
 *{
+    font-family: 'Fraunces', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    min-height: 100%;
+}
+body,.container{
+    min-height: 100vh;
+}
+.container{
+    background-color: var(--Dark_Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    width:500px;
+    background-color: var(--Dark_Grayish_Blue);
+    display:grid;
+    justify-items: center;
+}
+#id{
+    
+    color:var(--Neon_Green);
+    font-size: 10px;
+}
+#quote{
+    margin: 20px;
+    text-align: center;
+    color: var(--Light_Cyan);
+    font-size: 28px;
+}
+#dice{
+    background-color: var(--Neon_Green);
+    background-image: url(./images/icon-dice.svg);
+    background-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:40px;
+    height: 40px;
+    border-radius:50%;
+    position: relative;
+    bottom: -100%;
+    cursor: pointer;
+}
+#dice:hover{
+    box-shadow:0 0 15px var(--Neon_Green);
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
