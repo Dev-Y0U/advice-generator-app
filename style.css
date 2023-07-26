@@ -1,0 +1,19 @@
+:root{
+/* Primary color*/
+--Light_Cyan: hsl(193, 38%, 86%);
+--Neon_Green: hsl(150, 100%, 66%);
+/* Neutral color*/
+--Grayish_Blue: hsl(217, 19%, 38%);
+--Dark_Grayish_Blue: hsl(217, 19%, 24%);
+--Dark_Blue: hsl(218, 23%, 16%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
